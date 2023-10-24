@@ -1,26 +1,17 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { FaGithubSquare } from 'react-icons/fa';
-import { useInView } from 'react-intersection-observer';
-import { useActiveSectionContext } from '@/context/active-section-context';
+import { useSectionInView } from '@/lib/hooks';
 
 export default function Intro() {
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-  });
-  const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
 
-  useEffect(() => {
-    if (inView && Date.now() - timeOfLastClick > 1000) {
-      setActiveSection('Home');
-    }
-  }, [inView, setActiveSection, timeOfLastClick]);
+  const { ref } = useSectionInView('Home', 0.5);
 
   return (
     <section id='home' className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
@@ -70,7 +61,7 @@ export default function Intro() {
       >
         <span className='font-bold'>Hello, I'm Emin.</span> I'm a <span className='font-bold'>third-year student</span>{' '}
         at the <span className='font-bold'>Faculty of Electrical Engineering in Sarajevo, </span> majoring in 
-        <span className='font-bold'> Computer Science and Informatics</span> . I enjoy
+        <span className='font-bold'> Computer Science and Informatics</span>. I enjoy
         building <span className='italic'>sites & apps</span>. My focus is{' '}
         <span className='underline'>React (Next.js)</span>.
       </motion.h1>

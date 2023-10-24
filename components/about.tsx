@@ -3,20 +3,10 @@
 import React, { useEffect } from 'react';
 import SectionHeading from './section-heading';
 import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { useActiveSectionContext } from '@/context/active-section-context';
+import { useSectionInView } from '@/lib/hooks';
 
 export default function About() {
-  const { ref, inView } = useInView({
-    threshold: 0.75,
-  });
-  const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
-
-  useEffect(() => {
-    if (inView && Date.now() - timeOfLastClick > 1000) {
-      setActiveSection('About');
-    }
-  }, [inView, setActiveSection, timeOfLastClick]);
+  const { ref } = useSectionInView('About');
 
   return (
     <motion.section
@@ -38,11 +28,12 @@ export default function About() {
         <span className='underline'> full-stack</span> application development. I have implemented{' '}
         <span className='underline'>web applications</span>
         {', '}
-        <span className='underline'>mobile applications</span>, and applications based on <span className='underline'>embedded systems</span>. I have gone
-        through various stages of working with applications, from design to implementation, testing, and maintenance. My
-        core stack is <span className='font-medium'>React, Next.js, Node.js, and MongoDB</span>. I am also familiar with
-        Java, MySQL, TypeScript, C, C++, .Net, and Kotlin. I am always looking to learn new technologies. I am currently
-        looking for a <span className='font-medium'>full-time position</span> as a software developer.
+        <span className='underline'>mobile applications</span>, and applications based on{' '}
+        <span className='underline'>embedded systems</span>. I have gone through various stages of working with
+        applications, from design to implementation, testing, and maintenance. My core stack is{' '}
+        <span className='font-medium'>React, Next.js, Node.js, and MongoDB</span>. I am also familiar with Java, MySQL,
+        TypeScript, C, C++, .Net, and Kotlin. I am always looking to learn new technologies. I am currently looking for
+        a <span className='font-medium'>full-time position</span> as a software developer.
       </p>
 
       <p>
