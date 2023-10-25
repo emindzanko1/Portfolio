@@ -1,5 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
+import { FaSchool } from 'react-icons/fa';
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
@@ -35,28 +36,20 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Highschool",
+    location: "Sarajevo BiH",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I successfully completed my high school education at Prva gimnazija Sarajevo, renowned as the oldest and high-quality high school in Sarajevo",
+    icon: React.createElement(FaSchool),
+    date: "2015 - 2019",
+  },
+  {
+    title: "Bachelor degree",
+    location: "Sarajevo BiH",
+    description:
+      "I am a third-year student at the Faculty of Electrical Engineering in Sarajevo, majoring in Computer Science and Informatics. I am only one exam away from graduating",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2019 - 2023",
   },
 ] as const;
 
