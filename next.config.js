@@ -5,8 +5,11 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: 'scontent.fsjj1-1.fna.fbcdn.net'
-            }
-        ]
+            },
+        ],
+    },
+    experimental: {
+        serverActions: true,
     }
 }
 

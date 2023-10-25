@@ -8,10 +8,11 @@ import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function Intro() {
-
   const { ref } = useSectionInView('Home', 0.5);
+  const {setActiveSection, setTimeOfLastClick} =  useActiveSectionContext();
 
   return (
     <section id='home' className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
@@ -60,10 +61,9 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className='font-bold'>Hello, I'm Emin.</span> I'm a <span className='font-bold'>third-year student</span>{' '}
-        at the <span className='font-bold'>Faculty of Electrical Engineering in Sarajevo, </span> majoring in 
-        <span className='font-bold'> Computer Science and Informatics</span>. I enjoy
-        building <span className='italic'>sites & apps</span>. My focus is{' '}
-        <span className='underline'>React (Next.js)</span>.
+        at the <span className='font-bold'>Faculty of Electrical Engineering in Sarajevo, </span> majoring in
+        <span className='font-bold'> Computer Science and Informatics</span>. I enjoy building{' '}
+        <span className='italic'>sites & apps</span>. My focus is <span className='underline'>React (Next.js)</span>.
       </motion.h1>
       <motion.div
         className='flex flex-col sm:flex-row
@@ -79,6 +79,10 @@ export default function Intro() {
           className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2
         rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105
         transition'
+          onClick={() => {
+            setActiveSection('Contact');
+            setTimeOfLastClick(Date.now());
+          }}
         >
           Contact me here
           <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
@@ -87,7 +91,7 @@ export default function Intro() {
         <a
           className='group bg-white px-7 py-3 flex items-center gap-2
         rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105
-        transition cursor-pointer border border-black/10'
+        transition cursor-pointer borderBlack'
           href='/Emin_Džanko_CV.pdf'
           download
         >
@@ -97,7 +101,7 @@ export default function Intro() {
         <a
           className='bg-white p-4 text-gray-700 flex items-center gap-2
         rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105
-        transition cursor-pointer border border-black/10'
+        transition cursor-pointer borderBlack'
           href='https://www.linkedin.com/in/emin-d%C5%BEanko-215772280/'
           target='_blank'
         >
@@ -107,7 +111,7 @@ export default function Intro() {
         <a
           className='bg-white p-4 text-gray-700 flex items-center gap-2
         text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105
-        transition cursor-pointer border border-black/10'
+        transition cursor-pointer borderBlack'
           href='https://github.com/emindzanko1'
           target='_blank'
         >
