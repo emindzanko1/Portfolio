@@ -20,10 +20,10 @@ export default function About() {
     >
       <SectionHeading>About Me</SectionHeading>
       <p className='mb-3'>
-        As a final year student of <span className='font-medium'>Computer Science and Informatics</span>, set to
-        graduate by fall, I am looking for an opportunity to apply knowledge and skills gained throughout studies in a
+        As a final-year student of <span className='font-medium'>Computer Science and Informatics</span>, set to
+        graduate by winter, I am looking for an opportunity to apply knowledge and skills gained throughout my studies in a
         professional environment.
-        <span className='italic'>Throughout my academic experience and independent work</span> I have had the
+        <span className='italic'> Throughout my academic experience and independent work,</span> I have had the
         opportunity to work on various projects that allowed me to gain an understanding of{' '}
         <span className='underline'> full-stack</span> application development. I have implemented{' '}
         <span className='underline'>web applications</span>
@@ -37,8 +37,8 @@ export default function About() {
       </p>
 
       <p>
-        <span className='italic'>When I'm not coding</span>, I enjoy playing football, tennis or traveling. I also love{' '}
-        <span className='font-medium'>learning new languages</span>. I am currently learning about{' '}
+        <span className='italic'>When I'm not coding</span>, I enjoy playing football, tennis, or traveling. I also love{' '}
+        <span className='font-medium'>learning new languages</span>. I am currently learning the{' '}
         <span className='font-medium'>Spanish language.</span>
       </p>
     </motion.section>

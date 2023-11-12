@@ -61,9 +61,9 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className='font-bold'>Hello, I'm Emin.</span> I'm a <span className='font-bold'>third-year student</span>{' '}
-        at the <span className='font-bold'>Faculty of Electrical Engineering in Sarajevo, </span> majoring in
-        <span className='font-bold'> Computer Science and Informatics</span>. I enjoy building{' '}
-        <span className='italic'>sites & apps</span>. My focus is <span className='underline'>React (Next.js)</span>.
+        at <span className='font-bold'>Faculty of Electrical Engineering at the University of Sarajevo, </span> majoring
+        in
+        <span className='font-bold'> Computer Science and Informatics.</span>
       </motion.h1>
       <motion.div
         className='flex flex-col sm:flex-row
@@ -99,7 +99,7 @@ export default function Intro() {
         </a>
 
         <a
-          className='bg-white p-4 text-gray-700 flex items-center gap-2
+          className='bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem]
         rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105
         transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60'
           href='https://www.linkedin.com/in/emin-d%C5%BEanko-215772280/'

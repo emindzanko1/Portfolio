@@ -51,7 +51,7 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
           alt='Project I worked on'
           quality={95}
           className='absolute top-8 -right-40
-      w-[28.25rem] rounded-t-lg shadow-2xl
+      w-[28.25rem] h-[20rem] rounded-t-lg shadow-2xl
       group-even:-right-[initial] group-even:-left-40
       group-hover:-translate-x-3
       group-hover:translate-y-3
