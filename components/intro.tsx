@@ -28,7 +28,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src='https://scontent.fsjj1-1.fna.fbcdn.net/v/t1.6435-1/159777540_10158857842176067_7749871483390806744_n.jpg?stp=dst-jpg_p240x240&_nc_cat=108&ccb=1-7&_nc_sid=2b6aad&_nc_ohc=lGuhDZMfWpAAX_6fNl-&_nc_ht=scontent.fsjj1-1.fna&oh=00_AfDdz-5E4Qhl7KdW6K0djUYiYh7-W-CUmEccW1GNuTrsrw&oe=655DB91C'
+              src='/profilna.jpg'
               alt='Emin portrait'
               width='192'
               height='192'
@@ -92,7 +92,7 @@ export default function Intro() {
           className='group bg-white px-7 py-3 flex items-center gap-2
         rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105
         transition cursor-pointer borderBlack dark:bg-white/10'
-          href='/Emin_Džanko_CV.pdf'
+          href='/Emin Džanko CV.pdf'
           download
         >
           Download CV <HiDownload className='opacity-60 group-hover:-y-1 transition' />
