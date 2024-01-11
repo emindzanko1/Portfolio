@@ -83,7 +83,7 @@ export const projectsData = [
     title: "Schedule",
     description:
       "The Schedule App simplifies time management by providing an intuitive platform for organizing and optimizing daily tasks and activities.",
-    tags: ["Java", "MySQL", "JavaFX", "JUnit"],
+    tags: ["Java", "MySQL", "Maven", "JavaFX", "JUnit"],
     imageUrl: schedule,
   },
   {

@@ -21,7 +21,7 @@ export default function About() {
       <SectionHeading>About Me</SectionHeading>
       <p className='mb-3'>
         As a final-year student of <span className='font-medium'>Computer Science and Informatics</span>, set to
-        graduate by winter, I am looking for an opportunity to apply knowledge and skills gained throughout my studies
+        graduate by February, I am looking for an opportunity to apply knowledge and skills gained throughout my studies
         in a professional environment.
         <span className='italic'>Throughout my academic experience and independent work,</span> I have had the
         opportunity to work on various projects that allowed me to gain an understanding of{' '}
