@@ -31,8 +31,8 @@ export default function About() {
         <span className='underline'>mobile applications</span>, and applications based on{' '}
         <span className='underline'>embedded systems</span>. I have gone through various stages of working with
         applications, from design to implementation, testing, and maintenance. My core stack is{' '}
-        <span className='font-medium'>React, Next.js, Node.js, and MongoDB</span>. I am also familiar with Java, MySQL,
-        TypeScript, C, C++, .Net, and Kotlin. I am always looking to learn new technologies. I am currently looking for
+        <span className='font-medium'>Java, React and MySQL</span>. I am also familiar with Angular, Node.js, Next.js, .Net, Kotlin, PostgreSQL, 
+        TypeScript, C, C++. I am always looking to learn new technologies. I am currently looking for
         a <span className='font-medium'>full-time position</span> as a software developer.
       </p>
       <p>
