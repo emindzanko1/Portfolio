@@ -90,7 +90,7 @@ export const projectsData = [
     title: 'Cinaeste',
     description:
       'Mobile application for discovering, rating, and exploring a vast collection of movies, TV shows, and entertainment.',
-    tags: ['Kotlin', 'XML', 'MVVM', 'JUnit'],
+    tags: ['Kotlin', 'XML', 'JUnit'],
     imageUrl: cinaeste,
   },
   {
