@@ -61,7 +61,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className='font-bold'>Hello, I&apos;m Emin.</span> I&apos;m a{' '}
-        <span className='font-bold'>third-year student</span> at{' '}
+        <span className='font-bold'>software engineer</span> at <span className='font-bold'>Isatis Software Solutions and third-year student</span> at{' '}
         <span className='font-bold'>Faculty of Electrical Engineering at the University of Sarajevo, </span> majoring in
         <span className='font-bold'> Computer Science and Informatics.</span>
       </motion.h1>

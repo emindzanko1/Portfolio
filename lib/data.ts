@@ -62,6 +62,13 @@ export const experiencesData = [
     icon: React.createElement(FaReact),
     date: '2023',
   },
+  {
+    title: 'Intern at Isatis Software Solutions',
+    location: 'Sarajevo BiH',
+    description: `As an intern at Isatis Software Solutions, I am gaining valuable hands-on experience and insight into software development practices and methodologies`,
+    icon: React.createElement(CgWorkAlt),
+    date: '2024 - Present',
+  },
 ] as const;
 
 export const projectsData = [
@@ -117,13 +124,15 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  'Java',
+  '.NET',
   'React',
+  'MSSQL',
   'Angular',
   'Node.js',
   'Next.js',
-  '.NET',
+  'Java',
   'JavaScript',
+  'Knockout.js',
   'MySQL',
   'PostgreSQL',
   'Kotlin',
