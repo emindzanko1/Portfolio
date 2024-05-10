@@ -63,9 +63,9 @@ export const experiencesData = [
     date: '2023',
   },
   {
-    title: 'Intern at Isatis Software Solutions',
+    title: 'Isatis Software Solutions',
     location: 'Sarajevo BiH',
-    description: `As an intern at Isatis Software Solutions, I am gaining valuable hands-on experience and insight into software development practices and methodologies`,
+    description: `As a software engineer at Isatis Software Solutions, I design, develop, and implement innovative software solutions, leveraging my expertise in programming languages, algorithms, and software development methodologies to meet the needs of our clients.`,
     icon: React.createElement(CgWorkAlt),
     date: '2024 - Present',
   },
